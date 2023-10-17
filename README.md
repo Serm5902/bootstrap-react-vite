@@ -103,12 +103,10 @@ Luego ejecutamos la siguiente linea de comando:
 
 Para que sea mas fácil y futuros cambios podemos agregar parte de esta linea al package.json en la sección que dice scripts de la siguiente forma:
 
-`"deploy": "gh-pages -d build"`
+`"deploy": "gh-pages -d dist"`
 
-Recuerda que es necesario agregar la coma después de la cada linea para que no haya ningún error.
-
-Si agregamos esa linea al package.json debemos solo ejecutar el siguiente comando:
+Recuerda que es necesario agregar la coma después de la cada linea para que no haya ningún error.Si agregamos esa linea al package.json debemos solo ejecutar el siguiente comando:
 
 `npm run deploy`
 
-Si todo ha salido bien, tendremos un mensaje diciéndonos que nuestro sitio ha sido publicado, y si nos vamos a la sección de pages de nuestro repositorio tendremos la url del proyecto.
+Si todo ha salido bien, tendremos un mensaje diciéndonos que nuestro sitio ha sido publicado, y si nos vamos a la sección de pages de nuestro repositorio tendremos la url del proyecto. Si se presenta el error de que nuestra web no se visualiza bien debemos ir a la sección de github pages y cambiar el branch de master a gh-pages, de esta manera nuestra pagina se visualizara correctamente.
